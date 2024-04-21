@@ -112,7 +112,7 @@ export default function LandingPage() {
                 plant diseases.
               </p>
               <button className="but">
-                <a href="D:/RIDE%20Hack/Disease%20Detection/detection.html">Check Here</a>
+                <a href="D:\RIDE Hack\Disease Detection\detection.html">Check Here</a>
               </button>
             </div>
           </div>
