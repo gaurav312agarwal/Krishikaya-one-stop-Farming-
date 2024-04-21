@@ -53,6 +53,9 @@ export default function LandingPage() {
               <p>
                 Efficiently track, manage, and optimize farm inputs and outputs.
               </p>
+              <button className="but">
+                <a href="#">Visit</a>
+              </button>
             </div>
           </div>
           <div className="f fe">
@@ -63,7 +66,11 @@ export default function LandingPage() {
                 Connect farmers directly with buyers and sellers, facilitating
                 transparent transactions.
               </p>
+              <button className="but">
+                <a href="#">Visit</a>
+              </button>
             </div>
+
           </div>
           <div className="f">
             <div className="co f_img3"></div>
@@ -99,11 +106,14 @@ export default function LandingPage() {
           <div className="f">
             <div className="co f_img5"></div>
             <div className="con">
-              <h3>Crop Disease Detection</h3>
+              <h3>Disease Detection</h3>
               <p>
                 Empowering farmers with AI precision, detecting and diagnosing
                 plant diseases.
               </p>
+              <button className="but">
+                <a href="#">Check Here</a>
+              </button>
             </div>
           </div>
         </div>

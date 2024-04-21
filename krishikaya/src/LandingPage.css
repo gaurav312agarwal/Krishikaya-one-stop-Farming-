@@ -171,6 +171,15 @@
   background-color: rgb(19, 11, 2);
   margin-bottom: 1vmin;
 }
+.but a{
+  text-decoration: none;
+  color:bisque;
+  margin-top:0;
+  font-size:3vmin
+}
+.con p{
+  margin-bottom: 0;
+}
 .footer {
   background-image: url("./assets/footer.jpg");
   width: 100vw;
