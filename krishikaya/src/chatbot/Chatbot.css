@@ -11,6 +11,27 @@
     padding:2px;
     gap:3vmin;
 }
+.subBtn{
+    position: relative;
+    left: -15%;
+}
+
+.backBtn{
+    position: absolute;
+    top: 32.5%;
+    left: 57%;
+    height: 7vmin;
+        font-size: 3vmin;
+            margin-bottom: 3vmin;
+                border-radius: 10px;
+                cursor: pointer;
+        color: rgb(76, 44, 5);
+        background-color: bisque; 
+}
+.btnn{
+    text-decoration: none;
+        color: rgb(76, 44, 5);
+}
 
 .chatcontainer a{
     text-decoration: none;
