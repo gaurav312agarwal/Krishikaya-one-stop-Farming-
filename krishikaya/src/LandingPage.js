@@ -54,7 +54,7 @@ export default function LandingPage() {
                 Efficiently track, manage, and optimize farm inputs and outputs.
               </p>
               <button className="but">
-                <a href="#">Visit</a>
+                <a href="http://127.0.0.1:8000/login/" target="_blank">Visit</a>
               </button>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function LandingPage() {
                 transparent transactions.
               </p>
               <button className="but">
-                <a href="#">Visit</a>
+                <a href="http://127.0.0.1:8000/" target="_blank">Visit</a>
               </button>
             </div>
 
@@ -112,7 +112,7 @@ export default function LandingPage() {
                 plant diseases.
               </p>
               <button className="but">
-                <a href="#">Check Here</a>
+                <a href="D:/RIDE%20Hack/Disease%20Detection/detection.html">Check Here</a>
               </button>
             </div>
           </div>
