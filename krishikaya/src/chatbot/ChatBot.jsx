@@ -2,6 +2,7 @@ import React ,{useState} from 'react'
 import axios from "axios"
 import ReactMarkdown from "react-markdown"
 import './Chatbot.css'
+import { Link } from 'react-router-dom'
 export default function ChatBot() {
     const [question, setQuestion] = useState("");
     const [answer, setAnswer] = useState("");
@@ -47,8 +48,10 @@ export default function ChatBot() {
               onChange={(e) => setQuestion(e.target.value)}
               placeholder="Ask anything"
             ></textarea>
-            <button type="submit"  disabled={generatingAnswer} > <b>Generate answer </b></button>
+            <button type="submit" disabled={generatingAnswer} className='subBtn'> <b>Generate answer </b></button>
           </form>
+          <button className='backBtn'><Link to="/" className='btnn'><b>Go back</b></Link></button>
+
           <div className="answer">
             <ReactMarkdown className="p-3">{answer}</ReactMarkdown>
           </div>
