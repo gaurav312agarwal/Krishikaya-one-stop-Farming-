@@ -78,6 +78,7 @@ export default function LandingPage() {
                   ChatBot
                 </Link>
               </button>
+              
             </div>
           </div>
 
