@@ -73,6 +73,11 @@ export default function LandingPage() {
                 Accessible AI assistant provides instant support and guidance
                 for farmers.
               </p>
+              <button className="but">
+                <Link className="linkk" to="/chatbot">
+                  ChatBot
+                </Link>
+              </button>
             </div>
           </div>
 
