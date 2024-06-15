@@ -19,8 +19,8 @@ Welcome to KrishiKaya, a revolutionary platform designed to empower farmers, opt
 <h3>BACKEND:-</h3>
 <li>Django</li>
 <li>Sqlite3</li>
-<li>Firebase</li>
-<li>Tensorflow</li>
+<li>FireBase/li>
+<li>TensorFlow</li>
 
 <h3>DEPENDENCIES:-</h3>
 <li>OpenWeather API</li>
