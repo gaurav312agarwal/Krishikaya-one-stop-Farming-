@@ -16,12 +16,6 @@ Welcome to KrishiKaya, a revolutionary platform designed to empower farmers, opt
 <li>JavaScript</li>
 <li>React.js</li>
 
-<h3>BACKEND:-</h3>
-<li>Django</li>
-<li>Sqlite3</li>
-<li>FireBase/li>
-<li>TensorFlow</li>
-
 <h3>DEPENDENCIES:-</h3>
 <li>OpenWeather API</li>
 <li>Geo API</li>
@@ -29,4 +23,11 @@ Welcome to KrishiKaya, a revolutionary platform designed to empower farmers, opt
 <li>Plotly express</li>
 <li>Pillow</li>
 <li>Gemini</li>
+
+<h3>BACKEND:-</h3>
+<li>Django</li>
+<li>Sqlite3</li>
+<li>FireBase/li>
+<li>TensorFlow</li>
+
 
