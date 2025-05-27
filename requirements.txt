@@ -12,7 +12,7 @@ djangorestframework==3.16.0
 filelock==3.18.0
 flatbuffers==25.2.10
 fsspec==2025.3.2
-gast==0.6.0
+gast
 google-ai-generativelanguage==0.6.15
 google-api-core==2.24.2
 google-api-python-client==2.169.0
