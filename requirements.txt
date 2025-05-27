@@ -23,7 +23,7 @@ google-generativeai
 google-pasta==0.2.0
 googleapis-common-protos
 grpcio
-grpcio-status
+grpcio-status>=1.51.1,<1.54
 h5py==3.13.0
 httplib2==0.22.0
 idna==3.10
