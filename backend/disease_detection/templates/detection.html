@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Disease Detection</title>
+    <style>
+        body {
+            background: #f7f3ed;
+            font-family: 'Montserrat', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .disease-container {
+            max-width: 500px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+        }
+        .disease-header {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2d2d2d;
+            margin-bottom: 18px;
+        }
+        .custom-button {
+            background: #2d2d2d;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 16px;
+            transition: background 0.2s;
+        }
+        .custom-button:hover {
+            background: #4b4b4b;
+        }
+        #backend-result {
+            margin-top: 24px;
+            font-size: 1.1em;
+            background: #f3f0ea;
+            border-radius: 10px;
+            padding: 18px;
+        }
+        #preview {
+            display: block;
+            margin: 18px auto 0 auto;
+            max-width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+    </style>
+</head>
+<body>
+    <div class="disease-container">
+        <div class="disease-header">Disease Detection</div>
+        <form id="disease-form" enctype="multipart/form-data" method="post">
+            <input type="file" name="image" id="image-input" required>
+            <img id="preview" src="#" alt="Image Preview" style="display:none;"/>
+            <button type="submit" class="custom-button">Detect Disease</button>
+        </form>
+        <div id="backend-result"></div>
+    </div>
+    <script>
+        document.getElementById('image-input').onchange = function(event) {
+            const [file] = event.target.files;
+            if (file) {
+                const preview = document.getElementById('preview');
+                preview.src = URL.createObjectURL(file);
+                preview.style.display = 'block';
+            }
+        };
+        document.getElementById('disease-form').onsubmit = async function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            document.getElementById('backend-result').innerText = 'Detecting...';
+            const response = await fetch('/api/disease/detect/', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            let html = `<b>Disease:</b> ${data.result}<br>`;
+            html += `<b>Confidence:</b> ${(data.confidence*100).toFixed(2)}%<br>`;
+            html += `<b>Description:</b> ${data.description}<br>`;
+            html += `<b>Cure:</b> ${data.cure}<br>`;
+            html += `<b>Supplement:</b> ${data.supplement}<br>`;
+            if (data.supplement_link && data.supplement_link !== 'Not found') {
+                html += `<b>Buy Supplement:</b> <a href="${data.supplement_link}" target="_blank">${data.supplement_link}</a><br>`;
+    }
+            if (data.image_url && data.image_url !== 'Not found') {
+                html += `<img src="${data.image_url}" alt="Disease Example" style="max-width:180px;margin-top:10px;border-radius:8px;">`;
+            }
+            document.getElementById('backend-result').innerHTML = html;
+        };
+</script>
+</body>
+</html>

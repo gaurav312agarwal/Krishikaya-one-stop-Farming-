@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body, .equipment-hero, .equipment-cards, .equipment-card {
+  font-family: 'Poppins', sans-serif;
+}
+
 .App-header img {
   width: 100vw;
 }
@@ -216,4 +222,35 @@
 .footer_content img {
   height: 60%;
   margin-right: 10vmin;
+}
+.fade-in-bg {
+  animation: fadeIn 1s;
+  background: url('./assets/bg.jpg') center/cover no-repeat;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animated-btn {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.animated-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px #b5a16a55;
+}
+
+.animated-card {
+  animation: fadeIn 0.7s;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.animated-card:hover {
+  box-shadow: 0 6px 24px #b5a16a55;
+  transform: translateY(-6px) scale(1.03);
 }

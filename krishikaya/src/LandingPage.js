@@ -46,38 +46,26 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="features">
-          <div className="f">
-            <div className="co f_img1"></div>
-            <div className="con">
-              <h3>Inventory Management</h3>
-              <p>
-                Efficiently track, manage, and optimize farm inputs and outputs.
-              </p>
-              <button className="but">
-                <a href="http://127.0.0.1:8000/login/" target="_blank">Visit</a>
-              </button>
-            </div>
-          </div>
           <div className="f fe">
             <div className="co f_img2"></div>
             <div className="con">
               <h3>Market Place</h3>
               <p>
-                Connect farmers directly with buyers and sellers, facilitating
-                transparent transactions.
+                Connect farmers directly with buyers and sellers.
               </p>
               <button className="but">
-                <a href="http://127.0.0.1:8000/" target="_blank">Visit</a>
+                <Link className="linkk" to="/equipment">
+                  Visit
+                </Link>
               </button>
             </div>
-
           </div>
           <div className="f">
             <div className="co f_img3"></div>
             <div className="con">
               <h3>AI ChatBot</h3>
               <p>
-                Accessible AI assistant provides instant support and guidance
+                AI assistant provides instant support and guidance
                 for farmers.
               </p>
               <button className="but">
@@ -94,7 +82,7 @@ export default function LandingPage() {
             <div className="con">
               <h3>Weather Prediction</h3>
               <p>
-                Accurate forecasts empower farmers for informed decision-making.
+                Accurate forecasts help farmers for informed decision-making.
               </p>
               <button className="but">
                 <Link className="linkk" to="/weatherforecast">
@@ -108,11 +96,11 @@ export default function LandingPage() {
             <div className="con">
               <h3>Disease Detection</h3>
               <p>
-                Empowering farmers with AI precision, detecting and diagnosing
+                Empowering farmers with AI precision and detecting
                 plant diseases.
               </p>
               <button className="but">
-                <a href="D:\RIDE Hack\Disease Detection\detection.html">Check Here</a>
+                <a href="http://127.0.0.1:8000/api/disease/page/" target="_blank" rel="noopener noreferrer">Check Here</a>
               </button>
             </div>
           </div>
@@ -123,8 +111,8 @@ export default function LandingPage() {
       <div className="footer_content" alt="footer">
         <div className="fconn">
           <h2>Contact Us:-</h2>
-          <p>Phone No: +91-9337473782</p>
-          <a href="mailto:kaagreakdj@gmail.com">EMAIL US</a>
+          <p>Phone No: +91-8306029616</p>
+          <a href="mailto:gauravagarwal1694@gmail.com">EMAIL US</a>
         </div>
         <img src={footer} alt=""></img>
       </div>
