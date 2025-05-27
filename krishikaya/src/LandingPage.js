@@ -3,6 +3,9 @@ import header from "./assets/Project.jpg";
 import intro from "./assets/farm.png";
 import footer from "./assets/logo.png";
 import { Link } from "react-router-dom";
+
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+
 export default function LandingPage() {
   return (
     <div className="App">
@@ -100,7 +103,7 @@ export default function LandingPage() {
                 plant diseases.
               </p>
               <button className="but">
-                <a href="http://127.0.0.1:8000/api/disease/page/" target="_blank" rel="noopener noreferrer">Check Here</a>
+                <a href={`${API_URL}/api/disease/page/`} target="_blank" rel="noopener noreferrer">Check Here</a>
               </button>
             </div>
           </div>

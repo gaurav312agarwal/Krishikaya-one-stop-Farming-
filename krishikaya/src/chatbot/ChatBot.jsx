@@ -8,6 +8,8 @@ import "./Chatbot.css";
 const farmingBg =
   "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80"; // You can use your own image
 
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+
 export default function ChatBot() {
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
@@ -18,7 +20,7 @@ export default function ChatBot() {
     e.preventDefault();
     setAnswer("Loading your answer... \n It might take up to 10 seconds");
     try {
-      const response = await axios.post("http://localhost:8000/api/chatbot/", { question });
+      const response = await axios.post(`${API_URL}/api/chatbot/`, { question });
       setAnswer(response.data.answer);
     } catch (error) {
       setAnswer("Sorry - Something went wrong. Please try again!");
