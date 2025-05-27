@@ -14,14 +14,14 @@ flatbuffers==25.2.10
 fsspec==2025.3.2
 gast
 google-ai-generativelanguage==0.6.15
-google-api-core==2.24.2
+google-api-core
 google-api-python-client==2.169.0
 google-auth==2.39.0
 google-auth-httplib2==0.2.0
 google-auth-oauthlib==1.2.2
 google-generativeai==0.8.5
 google-pasta==0.2.0
-googleapis-common-protos==1.70.0
+googleapis-common-protos
 grpcio
 grpcio-status==1.71.0
 h5py==3.13.0
@@ -59,8 +59,8 @@ patsy==1.0.1
 pillow==10.2.0
 plotly==6.0.1
 plotly-express==0.4.1
-proto-plus==1.26.1
-protobuf==4.25.3
+proto-plus
+protobuf
 pyasn1==0.6.1
 pyasn1_modules==0.4.2
 pydantic==2.11.4
