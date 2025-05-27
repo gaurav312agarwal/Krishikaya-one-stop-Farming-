@@ -103,7 +103,7 @@ export default function LandingPage() {
                 plant diseases.
               </p>
               <button className="but">
-                <a href={`${API_URL}/api/disease/page/`} target="_blank" rel="noopener noreferrer">Check Here</a>
+                <Link className="linkk" to="/diseasedetection">Check Here</Link>
               </button>
             </div>
           </div>

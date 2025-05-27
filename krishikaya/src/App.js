@@ -7,6 +7,7 @@ import EquipmentDashboard from "./equipment/EquipmentDashboard";
 import EquipmentLogin from "./equipment/EquipmentLogin";
 import EquipmentRegister from "./equipment/EquipmentRegister";
 import EquipmentUserDashboard from "./equipment/EquipmentUserDashboard";
+import DiseaseDetection from "./DiseaseDetection";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/equipment/login" element={<EquipmentLogin />} />
         <Route path="/equipment/register" element={<EquipmentRegister />} />
         <Route path="/equipment/dashboard" element={<EquipmentUserDashboard />} />
+        <Route path="/diseasedetection" element={<DiseaseDetection />} />
       </Routes>
     </Router>
   );
