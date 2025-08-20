@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+const API_URL = process.env.REACT_APP_API_URL || 'https://krishikaya-one-stop-farming.onrender.com';
 
 function DiseaseDetection() {
   const [selectedFile, setSelectedFile] = useState(null);
